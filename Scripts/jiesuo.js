@@ -75,7 +75,6 @@ https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) url script-response
 
 # 酷我音乐系列
 # 下载地址：http://mtw.so/5tlGDo
-#原脚本地址：https://github.com/ddgksf2013/Cuttlefish/raw/master/Rewrite/UnlockVip/Kuwo.conf
 # 酷我音乐_AdBlock
 ^https?:\/\/rich\.kuwo\.cn\/AdService\/kaiping\/.+ url reject
 # 酷我音乐_AdBlock
@@ -86,24 +85,8 @@ https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) url script-response
 https?:\/\/audiobookpay\.kuwo\.cn/a\.p\?op=get_advertright url reject-dict
 # 酷我听书_Blockad
 https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright url reject-dict
-# 酷我听书_PayInfo
-https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p$ url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/kwyy.js
-# 酷我听书_PayInfo
-^https?:\/\/audiobookpay\.kuwo\.cn/a\.p url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/kwyy.js
-# 酷我听书_UserInfo
-https://tingshu.kuwo.cn/v2/api/user/info url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/kwyy.js
-# 酷我听书_UserInfo
-https?:\/\/audiobooks\.kuwo\.cn\/v2\/api\/user\/info url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/kwyy.js
-# 酷我听书_UserStatus
-https?:\/\/tingshu\.kuwo\.cn\/v2\/api\/pay\/vip\/extraVipStatus url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/kwyy.js
-# 酷我音乐_解锁Vip皮肤设置
-^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/theme  url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/kwyy.js
-# 酷我音乐_解锁无损下载（先选听无损，再下载无损）
-^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver=\d$ url script-request-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/kuwodl.js
 # 酷我音乐_解锁会员
-^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice) url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/kwyy.js
-# 酷我音乐_解锁NEW会员
-^https?:\/\/vip1\.kuwo\.cn\/vip\/enc\/user\/ url script-request-header https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/kuwovip.js
+^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).* url script-response-body https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kw.js
 # 酷我音乐_添加已购音乐
 ^https?:\/\/.*\.kuwo\.cn\/music\.pay\?uid\=\d+ url 302 http://musicpay.kuwo.cn/music.pay?uid=2
 
