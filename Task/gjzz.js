@@ -11,10 +11,10 @@
 
 [task_local]
 #赶集直招
-44 7,21 * * * https://raw.githubusercontent.com/leafTheFish/DeathNote/main/gjzz.js, tag=赶集直招, enabled=true
+44 7,21 * * * https://raw.githubusercontents.com/chxm1023/QX/main/Task/gjzz.js, tag=赶集直招, enabled=true
 
 [rewrite_local]
-https://gjgrowthoper.58.com/user/userinfo url script-request-header https://raw.githubusercontent.com/leafTheFish/DeathNote/main/gjzz.js
+https://gjgrowthoper.58.com/user/userinfo url script-request-header https://raw.githubusercontents.com/chxm1023/QX/main/Task/gjzz.js
 
 [MITM]
 hostname = gjgrowthoper.58.com
