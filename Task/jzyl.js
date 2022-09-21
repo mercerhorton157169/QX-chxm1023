@@ -16,7 +16,7 @@
 
 [task_local]
 #健走有礼
-00 11,20 * * * https://raw.githubusercontents.com/chxm1023/QX/main/Task/jzyl.js, tag=健走有礼, enabled=true
+00 11,20 * * ? https://raw.githubusercontents.com/chxm1023/QX/main/Task/jzyl.js, tag=健走有礼, enabled=true
 
 [rewrite_local]
 https://bwa.feierlaiedu.com/api/v1/bbg/taskRecord/queryUserInfo url script-request-header https://raw.githubusercontents.com/chxm1023/QX/main/Task/jzyl.js
