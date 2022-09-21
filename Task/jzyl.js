@@ -5,20 +5,23 @@
 存步数换现金提现的微信小程序，10W金币=1元
 一天一两次即可，理论上跑一次就能完成任务
 
+************************************
 青龙：
 捉bwa.feierlaiedu.com的任意包，把header里的token值填到jzylCookie里，多账号换行或者@隔开
 
+************************************
 重写：
 先注册，再打开重写重新进入小程序即可获取
 注意捉完CK后记得关闭重写，否则可能会捉到重复的账号
 [task_local]
 #健走有礼
-47 8,20 * * * https://raw.githubusercontent.com/leafTheFish/DeathNote/main/jzyl.js, tag=健走有礼, enabled=true
+00 11,20 * * * https://raw.githubusercontent.com/chxm1023/QX/main/Task/jzyl.js, tag=健走有礼, enabled=true
 [rewrite_local]
-https://bwa.feierlaiedu.com/api/v1/bbg/taskRecord/queryUserInfo url script-request-header https://raw.githubusercontent.com/leafTheFish/DeathNote/main/jzyl.js
+https://bwa.feierlaiedu.com/api/v1/bbg/taskRecord/queryUserInfo url script-request-header https://raw.githubusercontent.com/chxm1023/QX/main/Task/jzyl.js
 [MITM]
 hostname = bwa.feierlaiedu.com
 
+************************************
 const $ = new Env("健走有礼")
 */
 const $ = new Env("健走有礼");
