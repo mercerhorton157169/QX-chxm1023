@@ -7,7 +7,7 @@
 
 [rewrite_local]
 
-^https?:\/\/api\.revenuecat\.com\/v\d\/(subscribers/\$RCAnonymousID\%(\w)+|receipts)$ url echo-response text/Json echo-response https://raw.githubusercontents.com/chxm1023/QX/main/Scripts/FB.js
+^https?:\/\/api\.revenuecat\.com\/v\d\/(subscribers/\$RCAnonymousID\%(\w)+|receipts)$ url echo-response text/Json echo-response https://raw.githubusercontents.com/chxm1023/QX/main/Scripts/fb.js
 
 
 [mitm]
