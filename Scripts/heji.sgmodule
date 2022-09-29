@@ -2,9 +2,9 @@
 #!desc=pandavip,Picsew
 
 [MITM]
-hostname = %APPEND% buy.itunes.apple.com
+hostname = %INSERT% buy.itunes.apple.com
 
 
 [Script]
 pandavip = type=http-response,pattern= ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,max-size=0,timeout=1000,script-path= https://raw.githubusercontents.com/chxm1023/script/main/JB/pandavip.js
-Picsew = type=http-request,pattern= ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=0,timeout=1000,script-path= https://raw.githubusercontents.com/chxm1023/script/main/JB/Picsew.js,script-update-interval=0
+Picsew = type=http-request,pattern= ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=0,timeout=1000,script-path= https://raw.githubusercontents.com/chxm1023/script/main/JB/Picsew.js
