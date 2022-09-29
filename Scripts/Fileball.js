@@ -14,7 +14,7 @@
       ]
     },
     "first_seen" : "1983-03-15T00:00:00Z",
-    "original_application_version" : "162",
+    "original_application_version" : "170",
     "other_purchases" : {
       "filebox_pro" : {
         "purchase_date" : "1983-03-15T00:00:00Z"
