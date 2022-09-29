@@ -33,7 +33,7 @@
       }
     },
     "original_purchase_date" : "1983-03-15T00:00:00Z",
-    "original_app_user_id" : "$RCAnonymousID:88af1c116b274f27aaec084a31ebe80f",
+    "original_app_user_id" : "$RCAnonymousID:3A8e5a11e56b4246f2ab2b17058c01db1e",
     "last_seen" : "1983-03-15T00:00:00Z"
   }
 }
