@@ -5,7 +5,7 @@
     "entitlements" : {
       "filebox_pro" : [
         {
-          "id" : "chxm1023",
+          "id" : "yingzi",
           "is_sandbox" : false,
           "purchase_date" : "1983-03-15T00:00:00Z",
           "original_purchase_date" : "1983-03-15T00:00:00Z",
