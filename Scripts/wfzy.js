@@ -1,25 +1,18 @@
 /*******************************
 
-
-公众号：搞鸡玩家
-
-苹果商店下载: 悟饭掌阅
+下载地址: http://mtw.so/5Btdhc
 
 修改内容：解锁永久会员 
 
 注意事项：每次解锁需启动圈叉
 
+[rewrite_local]
+# 悟饭游戏破解VIP A+
+http:\/\/iosv2\.cjapi\.wufan88\.com\/user\/.+ url script-response-body https://raw.githubusercontents.com/chxm1023/QX/main/Scripts/wfzy.js
 
+[mitm] 
 
-本地重写
-#悟饭游戏破解VIP A+
-http:\/\/iosv2\.cjapi\.wufan88\.com\/user\/.+ url script-response-body wf.js
-
-
-
-主机名MITM
-
-iosv2.cjapi.wufan88.com
+hostname = iosv2.cjapi.wufan88.com
 
 
 *******************************/
