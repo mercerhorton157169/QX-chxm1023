@@ -82,7 +82,7 @@ https://wallpaper-api.cross2d.com/api/.* url script-response-body https://raw.gi
 # 下载地址：http://mtw.so/5X5nGK
 # hostname= api.revenuecat.com
 *********************************************/
-^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/fileball.js
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/Fileball.js
 
 /*********************************************
 # FileBall 挂载阿里云盘@ddgksf2013
