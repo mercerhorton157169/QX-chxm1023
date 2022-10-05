@@ -40,6 +40,16 @@ hostname= buy.itunes.apple.com, *.aoscdn.com, apimboom2.globaldelight.net, api-w
 
 [rewrite_local]
 
+
+/*********************************************
+# aptv 解锁Pro功能
+# 下载地址：http://mtw.so/5J04Kz
+# hostname= buy.itunes.apple.com
+*********************************************/
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/aptv.js
+
+
+
 /*********************************************
 # 熊猫壁纸解锁收费下载
 # 下载地址http://mtw.so/6r6bQD
@@ -68,17 +78,17 @@ https://wallpaper-api.cross2d.com/api/.* url script-response-body https://raw.gi
 
 
 /*********************************************
-# FileBall 挂载阿里云盘@ddgksf2013
-# hostname= *example.com
-*********************************************/
-^https?:\/\/.*\.example\.com url script-analyze-echo-response https://raw.githubusercontents.com/ddgksf2013/Cuttlefish/master/Script/ali.js
-
-/*********************************************
 # Fileball 解锁高级版
 # 下载地址：http://mtw.so/5X5nGK
 # hostname= api.revenuecat.com
 *********************************************/
 ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/fileball.js
+
+/*********************************************
+# FileBall 挂载阿里云盘@ddgksf2013
+# hostname= *example.com
+*********************************************/
+^https?:\/\/.*\.example\.com url script-analyze-echo-response https://raw.githubusercontents.com/ddgksf2013/Cuttlefish/master/Script/ali.js
 
 
 
