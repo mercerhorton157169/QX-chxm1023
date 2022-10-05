@@ -18,7 +18,7 @@ ksAggressive -- 选填，最大化提现，默认开启，要关闭就填0
 
 [task_local]
 #快手
-22 10-20 * * ? https://raw.githubusercontents.com/chxm1023/QX/main/Task/ks.js, tag=快手, enabled=true
+22 10-20 * * ? https://raw.githubusercontents.com/chxm1023/QX/main/Task/ks.js, tag=快手, img-url=https://raw.githubusercontents.com/chxm1023/script/main/icon/kuaishou.png, enabled=true
 
 [rewrite_local]
 appsupport/yoda/biz/info url script-request-header https://raw.githubusercontents.com/chxm1023/QX/main/Task/ks.js
