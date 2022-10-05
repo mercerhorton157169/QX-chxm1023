@@ -11,7 +11,7 @@
 
 [task_local]
 #赶集直招
-44 7,21 * * * https://raw.githubusercontents.com/chxm1023/QX/main/Task/gjzz.js, tag=赶集直招, enabled=true
+44 7,21 * * ? https://raw.githubusercontents.com/chxm1023/QX/main/Task/gjzz.js, tag=赶集直招, img-url=https://raw.githubusercontents.com/chxm1023/script/main/icon/ganji.png, enabled=true
 
 [rewrite_local]
 https://gjgrowthoper.58.com/user/userinfo url script-request-header https://raw.githubusercontents.com/chxm1023/QX/main/Task/gjzz.js
