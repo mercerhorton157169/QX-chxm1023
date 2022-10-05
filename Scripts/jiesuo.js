@@ -1,8 +1,9 @@
 /*********************************************
-*================UserScript==================*
-***********************************************************解锁合集@chxm1023整理**************
+=================UserScript===================
 **********************************************
-*================UserScript==================*
+*************解锁合集@chxm1023整理**************
+**********************************************
+=================UserScript===================
 
 使用声明：此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
 
@@ -42,11 +43,11 @@ hostname= buy.itunes.apple.com, *.aoscdn.com, apimboom2.globaldelight.net, api-w
 
 
 /*********************************************
-# aptv 解锁Pro功能
+# APTV 解锁Pro功能
 # 下载地址：http://mtw.so/5J04Kz
 # hostname= buy.itunes.apple.com
 *********************************************/
-^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/aptv.js
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontents.com/89996462/Quantumult-X/main/ycdz/aptv.js
 
 
 
@@ -55,7 +56,7 @@ hostname= buy.itunes.apple.com, *.aoscdn.com, apimboom2.globaldelight.net, api-w
 # 下载地址http://mtw.so/6r6bQD
 # hostname= wallpaper-api.cross2d.com
 *********************************************/
-https://wallpaper-api.cross2d.com/api/.* url script-response-body https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/Pandawallpaper.js
+https://wallpaper-api.cross2d.com/api/.* url script-response-body https://raw.githubusercontents.com/Alex0510/Eric/master/surge/Script/Pandawallpaper.js
 
 
 
@@ -82,7 +83,7 @@ https://wallpaper-api.cross2d.com/api/.* url script-response-body https://raw.gi
 # 下载地址：http://mtw.so/5X5nGK
 # hostname= api.revenuecat.com
 *********************************************/
-^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/Fileball.js
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontents.com/chxm1023/QX/main/Scripts/Fileball.js
 
 /*********************************************
 # FileBall 挂载阿里云盘@ddgksf2013
