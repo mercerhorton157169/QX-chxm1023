@@ -35,7 +35,7 @@ FileBall挂载阿里云操作步骤:
 
 [mitm]
 
-hostname= buy.itunes.apple.com, *.aoscdn.com, apimboom2.globaldelight.net, api-weather.andy.works, www.duitang.com, spclient.wg.spotify.com, notability.com, revenuecat.lakecoloring.com, user.ftmailbox.cn, *.wallpaperscraft.com, screen-lock.51wnl-cq.com, api.risingfalling.com, api.meiease.cn, pro-status-service-prod.azurewebsites.net, api-sub.meitu.com, server.yoyiapp.com, pan.baidu.com, ap*.intsig.net, mb3admin.com, rich.kuwo.cn, *.kwcdn.kuwo.cn, mobilead.kuwo.cn, musicpay.kuwo.cn, vip1.kuwo.cn, audiobookpay.kuwo.cn, tingshu.kuwo.cn,omp-audiobookpay.lrts.me, iosv2.cjapi.wufan88.com, api-v3.speedtest.cn, *.docer.wps.cn, vipapi.wps.cn, *account.wps.cn, *account.wps.com, app.yiyan.art, biz.caiyunapp.com, api.tidal.com, auth.tidal.com, api.revenuecat.com, *example.com, dida365.com, fufei.fengyunsoft.cn, wallpaper-api.cross2d.com
+hostname= buy.itunes.apple.com, *.aoscdn.com, apimboom2.globaldelight.net, api-weather.andy.works, www.duitang.com, spclient.wg.spotify.com, notability.com, revenuecat.lakecoloring.com, user.ftmailbox.cn, *.wallpaperscraft.com, screen-lock.51wnl-cq.com, api.risingfalling.com, api.meiease.cn, pro-status-service-prod.azurewebsites.net, api-sub.meitu.com, server.yoyiapp.com, pan.baidu.com, ap*.intsig.net, mb3admin.com, rich.kuwo.cn, *.kwcdn.kuwo.cn, mobilead.kuwo.cn, musicpay.kuwo.cn, vip1.kuwo.cn, audiobookpay.kuwo.cn, tingshu.kuwo.cn, omp-audiobookpay.lrts.me, iosv2.cjapi.wufan88.com, api-v3.speedtest.cn, *.docer.wps.cn, vipapi.wps.cn, *account.wps.cn, *account.wps.com, app.yiyan.art, biz.caiyunapp.com, api.tidal.com, api.revenuecat.com, *example.com, dida365.com, fufei.fengyunsoft.cn, wallpaper-api.cross2d.com
 
 
 
@@ -48,6 +48,15 @@ hostname= buy.itunes.apple.com, *.aoscdn.com, apimboom2.globaldelight.net, api-w
 # hostname= buy.itunes.apple.com
 *********************************************/
 ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontents.com/89996462/Quantumult-X/main/ycdz/aptv.js
+
+
+
+/*********************************************
+# Fileball 解锁高级版
+# 下载地址：http://mtw.so/5X5nGK
+# hostname= api.revenuecat.com
+*********************************************/
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontents.com/chxm1023/QX/main/Scripts/Fileball.js
 
 
 
@@ -77,13 +86,6 @@ https://wallpaper-api.cross2d.com/api/.* url script-response-body https://raw.gi
 ^https:\/\/(ticktick|dida365)\.com\/api\/v2\/user\/status url script-response-body https://raw.githubusercontents.com/ddgksf2013/Cuttlefish/master/Crack/ddqd.js
 
 
-
-/*********************************************
-# Fileball 解锁高级版
-# 下载地址：http://mtw.so/5X5nGK
-# hostname= api.revenuecat.com
-*********************************************/
-^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontents.com/chxm1023/QX/main/Scripts/Fileball.js
 
 /*********************************************
 # FileBall 挂载阿里云盘@ddgksf2013
