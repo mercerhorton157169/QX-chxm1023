@@ -1,9 +1,8 @@
 /*********************************************
-=================UserScript===================
+*================UserScript==================*
+***********************************************************解锁合集@chxm1023整理**************
 **********************************************
-*************解锁合集@chxm1023整理**************
-**********************************************
-=================UserScript===================
+*================UserScript==================*
 
 使用声明：此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
 
@@ -31,28 +30,38 @@ FileBall挂载阿里云操作步骤:
 2.8连接&Enjoy
 *********************************************/
 
-
-
 [mitm]
 
-hostname= api.revenuecat.com, buy.itunes.apple.com, *.aoscdn.com, apimboom2.globaldelight.net, api-weather.andy.works, www.duitang.com, spclient.wg.spotify.com, notability.com, revenuecat.lakecoloring.com, user.ftmailbox.cn, *.wallpaperscraft.com, screen-lock.51wnl-cq.com, api.risingfalling.com, api.meiease.cn, pro-status-service-prod.azurewebsites.net, api-sub.meitu.com, server.yoyiapp.com, pan.baidu.com, ap*.intsig.net, mb3admin.com, rich.kuwo.cn, *.kwcdn.kuwo.cn, mobilead.kuwo.cn, musicpay.kuwo.cn, vip1.kuwo.cn, audiobookpay.kuwo.cn, tingshu.kuwo.cn, omp-audiobookpay.lrts.me, iosv2.cjapi.wufan88.com, api-v3.speedtest.cn, *.docer.wps.cn, vipapi.wps.cn, *account.wps.cn, *account.wps.com, app.yiyan.art, biz.caiyunapp.com, api.tidal.com, *example.com, dida365.com, fufei.fengyunsoft.cn, wallpaper-api.cross2d.com
+hostname= api.revenuecat.com, buy.itunes.apple.com, *.aoscdn.com, apimboom2.globaldelight.net, api-weather.andy.works, www.duitang.com, spclient.wg.spotify.com, notability.com, revenuecat.lakecoloring.com, user.ftmailbox.cn, *.wallpaperscraft.com, screen-lock.51wnl-cq.com, api.risingfalling.com, api.meiease.cn, pro-status-service-prod.azurewebsites.net, api-sub.meitu.com, server.yoyiapp.com, pan.baidu.com, ap*.intsig.net, mb3admin.com, rich.kuwo.cn, *.kwcdn.kuwo.cn, mobilead.kuwo.cn, musicpay.kuwo.cn, vip1.kuwo.cn, audiobookpay.kuwo.cn, tingshu.kuwo.cn,omp-audiobookpay.lrts.me, iosv2.cjapi.wufan88.com, api-v3.speedtest.cn, *.docer.wps.cn, vipapi.wps.cn, *account.wps.cn, *account.wps.com, app.yiyan.art, biz.caiyunapp.com, api.tidal.com, *example.com, dida365.com, fufei.fengyunsoft.cn, wallpaper-api.cross2d.com
+
 
 
 
 [rewrite_local]
-
 
 /*********************************************
 # Fileball 解锁高级版
 # 下载地址：http://mtw.so/5X5nGK
 # hostname= api.revenuecat.com
 *********************************************/
-^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontents.com/chxm1023/QX/main/Scripts/Fileball.js
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/Fileball.js
+
+
 
 /*********************************************
 # FileBall 挂载阿里云盘@ddgksf2013
 # hostname= *example.com
 *********************************************/
+^https?:\/\/.*\.example\.com url script-analyze-echo-response https://raw.githubusercontents.com/ddgksf2013/Cuttlefish/master/Script/ali.js
+
+
+/*********************************************
+# APTV 解锁Pro功能
+# 下载地址：http://mtw.so/5J04Kz
+# hostname= buy.itunes.apple.com
+*********************************************/
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/aptv.js
+
 
 
 /*********************************************
@@ -60,7 +69,7 @@ hostname= api.revenuecat.com, buy.itunes.apple.com, *.aoscdn.com, apimboom2.glob
 # 下载地址http://mtw.so/6r6bQD
 # hostname= wallpaper-api.cross2d.com
 *********************************************/
-https://wallpaper-api.cross2d.com/api/.* url script-response-body https://raw.githubusercontents.com/Alex0510/Eric/master/surge/Script/Pandawallpaper.js
+https://wallpaper-api.cross2d.com/api/.* url script-response-body https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/Pandawallpaper.js
 
 
 
@@ -228,15 +237,6 @@ https?:\/\/api-sub\.meitu\.com\/v\d\/user\/vip_info\.json url script-response-bo
 # hostname= pro-status-service-prod.azurewebsites.net
 *********************************************/
 https://pro-status-service-prod.azurewebsites.net/api/item url script-response-body https://raw.githubusercontents.com/ddgksf2013/Cuttlefish/master/Crack/rf.js
-
-
-
-/*********************************************
-# 图图记账 解锁Vip权限
-# 下载地址：http://mtw.so/6jpmAx
-# hostname= api.revenuecat.com
-*********************************************/
-^https?:\/\/api\.revenuecat\.com\/v\d\/(receipts|subscribers\/(\$RCAnonymousID%3A)?\w{32})$ url script-echo-response https://raw.githubusercontents.com/ddgksf2013/Cuttlefish/master/Crack/tutujizhang.js
 
 
 
