@@ -2,7 +2,7 @@
 
 [rewrite_local]
 
-^https:\/\/api\.duitang\.com\/napi url script-response-body duitang.js
+^https:\/\/api\.duitang\.com\/napi url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/tuitang.js
 
 [mitm] 
 
