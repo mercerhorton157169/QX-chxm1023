@@ -1,23 +1,3 @@
-/******************************
-
-脚本功能：fileball+解锁订阅
-
-*******************************
-
-[rewrite_local]
-
-^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontents.com/chxm1023/QX/main/Scripts/file.js
-
-[mitm] 
-
-hostname = api.revenuecat.com
-
-*******************************/
-
-
-
-let obj = JSON.parse($response.body);
-obj = {
 {
   "request_date_ms" : 416505600000,
   "request_date" : "1983-03-15T00:00:00Z",
@@ -82,4 +62,3 @@ obj = {
   ],
   "current_offering_id" : "pro"
 }
-$done({body: JSON.stringify(obj)});
