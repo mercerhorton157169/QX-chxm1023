@@ -17,7 +17,7 @@
 
 [rewrite_local]
 
-^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-echo-response heji.js
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-echo-response https://raw.githubusercontents.com/chxm1023/QX/main/Scripts/iTunesjs.js
 
 
 [mitm] 
