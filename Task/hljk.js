@@ -7,6 +7,10 @@
  * 1. 设置基准货币，默认人民币(CNY)。
  * 2. 设置保留几位小数。
  * @update ：YangZhaocool
+
+[task_local]
+10 0 * * ? https://raw.githubusercontents.com/chxm1023/QX/main/Task/hljk.js, tag=汇率监控, img-url=https://raw.githubusercontents.com/chxm1023/script/main/icon/exchangerate.png, enabled=true
+
 *******************************/
 
 const base = "CNY"; // 基准货币，可以改成其他币种
