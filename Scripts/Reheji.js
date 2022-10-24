@@ -29,9 +29,14 @@
 
 *****************************************
 
-^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(\$RCAnonymousID%)?(\w)*$) url script-response-body ceshijs.js
+[rewrite_local]
+
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(\$RCAnonymousID%)?(.*?)*$) url script-response-body https://raw.githubusercontents.com/chxm1023/QX/main/Scripts/Reheji.js
+
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(\$RCAnonymousID%)?(.*?)*$) url script-request-header https://raw.githubusercontents.com/chxm1023/QX/main/Scripts/Reheji.js
 
 
+[mitm]
 hostname = api.revenuecat.com
 
 
