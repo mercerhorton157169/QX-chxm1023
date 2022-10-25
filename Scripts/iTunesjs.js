@@ -17,7 +17,7 @@
 
 [rewrite_local]
 
-^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-echo-response https://raw.githubusercontents.com/chxm1023/QX/main/Scripts/iTunesjs.js
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-echo-response https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/iTunesjs.js
 
 
 [mitm] 
@@ -50,17 +50,13 @@ if (ua.indexOf('APTV') != -1) {
 }
 
 
-
-Status = 'HTTP/1.1 200 OK';
-Headers = {"Content-Type": "application/json"};
-
-const Response = {
-    status: Status,
-    headers: Headers,
+const chxm1023 = {
     body: JSON.stringify(Body)
 };
 
-$done(Response);
+$done(chxm1023);
+
+
 
 
 
