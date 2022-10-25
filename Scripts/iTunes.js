@@ -25,7 +25,7 @@
 
 [rewrite_local]
 
-^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-echo-response https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/iTunesjs.js
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-echo-response https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/iTunes.js
 
 
 
