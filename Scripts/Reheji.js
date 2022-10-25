@@ -33,9 +33,9 @@
 
 [rewrite_local]
 
-^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(\$RCAnonymousID%)?(.*?)*$) url script-response-body https://raw.githubusercontents.com/chxm1023/QX/main/Scripts/Reheji.js
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(\$RCAnonymousID%)?(.*?)*$) url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/Reheji.js
 
-^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(\$RCAnonymousID%)?(.*?)*$) url script-request-header https://raw.githubusercontents.com/chxm1023/QX/main/Scripts/Reheji.js
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(\$RCAnonymousID%)?(.*?)*$) url script-request-header https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/Reheji.js
 
 ^https:\/\/app-measurement\.com\/config\/app\/1?(.*?)*$ url reject
 
@@ -44,9 +44,9 @@
 # Surge, Loon, Shadowrocket配置
 
 [Script]
-http-response ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(\$RCAnonymousID%)?(.*?)*$) requires-body=1,script-path=https://raw.githubusercontents.com/chxm1023/QX/main/Scripts/Reheji.js
+http-response ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(\$RCAnonymousID%)?(.*?)*$) requires-body=1,script-path=https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/Reheji.js
 
-http-request ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(\$RCAnonymousID%)?(.*?)*$) script-path=https://raw.githubusercontents.com/chxm1023/QX/main/Scripts/Reheji.js
+http-request ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(\$RCAnonymousID%)?(.*?)*$) script-path=https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/Reheji.js
 
 
 
