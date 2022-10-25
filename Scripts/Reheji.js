@@ -37,6 +37,8 @@
 
 ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(\$RCAnonymousID%)?(.*?)*$) url script-request-header https://raw.githubusercontents.com/chxm1023/QX/main/Scripts/Reheji.js
 
+^https:\/\/app-measurement\.com\/config\/app\/1?(.*?)*$ url reject
+
 
 *****************************************
 # Surge, Loon, Shadowrocket配置
@@ -50,7 +52,7 @@ http-request ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(\$RCA
 
 [mitm]
 
-hostname = api.revenuecat.com
+hostname = api.revenuecat.com, app-measurement.com
 
 *****************************************/
 
