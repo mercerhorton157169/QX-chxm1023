@@ -8,11 +8,13 @@
 
 [rewrite_local]
 
-^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontents.com/chxm1023/QX/main/Scripts/Fileball.js
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/Fileball.js
+
+^https:\/\/app-measurement\.com\/config\/app\/1?(.*?)*$ url reject
 
 [mitm] 
 
-hostname = api.revenuecat.com
+hostname = api.revenuecat.com, app-measurement.com
 
 ****************************************/
 
