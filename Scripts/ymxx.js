@@ -1,13 +1,12 @@
-//////////////////////////////////////////////
-////////////羊毛合集，@chxm1023整理/////////////
-/////////////////////////////////////////////
+/****************************************
+
+脚本介绍：薅羊毛合集，@chxm1023整理
+
+****************************************/
 
 [mitm]
 
 hostname= apph5.manmanbuy.com, open.meituan.com, game.xiaojukeji.com,api.kuaisho*.com,gjgrowthoper.58.com, bwa.feierlaiedu.com, magicisland.58.com, *.ele.me,  *.bdcloudapi.com
-
-
-
 
 
 
@@ -39,13 +38,13 @@ https://gjgrowthoper.58.com/user/userinfo url script-request-header https://raw.
 
 
 # 快手 hostname= api.kuaisho*.com
-appsupport/yoda/biz/info url script-request-header https://raw.githubusercontents.com/chxm1023/QX/main/Task/ks.js
+appsupport/yoda/biz/info url script-request-header https://raw.githubusercontent.com/chxm1023/QX/main/Task/ks.js
 ksapp/client/package/renew url script-request-header https://raw.githubusercontent.com/chxm1023/QX/main/Task/ks.js
 
 
 
 # 快手极速版 hostname= api.kuaisho*.com
-appsupport/yoda/biz/info url script-request-header https://raw.githubusercontents.com/chxm1023/QX/main/Task/ksjsb_v2.js
+appsupport/yoda/biz/info url script-request-header https://raw.githubusercontent.com/chxm1023/QX/main/Task/ksjsb_v2.js
 ksapp/client/package/renew url script-request-header https://raw.githubusercontent.com/chxm1023/QX/main/Task/ksjsb_v2.js
 
 
