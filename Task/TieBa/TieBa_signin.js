@@ -1,4 +1,4 @@
-/*
+/****************************************
 百度贴吧签到，增加重试机制，减少签到失败的情况。
 脚本为串行执行，通过设定batchSize的值<int>，实现每批多少个贴吧并行签到一次。
 
@@ -9,28 +9,28 @@
 以下是添加远程任务
 [task_local]
 # 贴吧签到
-8 0 * * ? https://raw.githubusercontents.com/chxm1023/QX/main/Task/TieBa/TieBa_signin.js, tag=百度贴吧签到, img-url=https://raw.githubusercontents.com/chxm1023/script/main/icon/tieba.png, enabled=false
+8 0 * * ? https://raw.githubusercontent.com/chxm1023/QX/main/Task/TieBa/TieBa_signin.js, tag=百度贴吧签到, img-url=https://raw.githubusercontent.com/chxm1023/script/main/icon/tieba.png, enabled=false
 
 
 以下是远程重写，和本地重写二选一
 [rewrite_remote]
 # 百度贴吧每日自动签到获取Cookie
-https://raw.githubusercontents.com/chxm1023/QX/main/Task/TieBa/TieBa_cookie.js, tag=贴吧获取Cookie, update-interval=172800, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/chxm1023/QX/main/Task/TieBa/TieBa_cookie.js, tag=贴吧获取Cookie, update-interval=172800, opt-parser=false, enabled=false
 
 
 以下是本地重写，和远程重写二选一
 [rewrite_local]
 # 百度贴吧每日自动签到获取Cookie
-^https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login url script-request-header https://raw.githubusercontents.com/chxm1023/QX/main/Task/TieBa/TieBa_signin.js
-^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/channelIconConfig url script-request-header https://raw.githubusercontents.com/chxm1023/QX/main/Task/TieBa/TieBa_signin.js
-^https?:\/\/tiebac\.baidu\.com\/c\/u\/follow\/getFoldedMessageUserInfo url script-request-header https://raw.githubusercontents.com/chxm1023/QX/main/Task/TieBa/TieBa_signin.js
+^https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login url script-request-header https://raw.githubusercontent.com/chxm1023/QX/main/Task/TieBa/TieBa_signin.js
+^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/channelIconConfig url script-request-header https://raw.githubusercontent.com/chxm1023/QX/main/Task/TieBa/TieBa_signin.js
+^https?:\/\/tiebac\.baidu\.com\/c\/u\/follow\/getFoldedMessageUserInfo url script-request-header https://raw.githubusercontent.com/chxm1023/QX/main/Task/TieBa/TieBa_signin.js
 
 
 以下是主机名，搭配本地重写，远程重写内置已有主机名
 [MITM] 
 hostname= c.tieba.baidu.com
 
-*/
+****************************************/
 
 
 const scirptName = "百度贴吧";
