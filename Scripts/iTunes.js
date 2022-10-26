@@ -34,7 +34,6 @@
 ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-echo-response https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/iTunes.js
 
 
-
 [mitm] 
 
 hostname = buy.itunes.apple.com
