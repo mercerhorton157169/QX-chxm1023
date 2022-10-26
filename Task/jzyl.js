@@ -16,10 +16,10 @@
 
 [task_local]
 #健走有礼
-0 11,20 * * ? https://raw.githubusercontents.com/chxm1023/QX/main/Task/jzyl.js, tag=健走有礼, img-url=https://raw.githubusercontents.com/chxm1023/script/main/icon/jzyl.png, enabled=true
+0 11,20 * * ? https://raw.githubusercontent.com/chxm1023/QX/main/Task/jzyl.js, tag=健走有礼, img-url=https://raw.githubusercontent.com/chxm1023/script/main/icon/jzyl.png, enabled=true
 
 [rewrite_local]
-https://bwa.feierlaiedu.com/api/v1/bbg/taskRecord/queryUserInfo url script-request-header https://raw.githubusercontents.com/chxm1023/QX/main/Task/jzyl.js
+https://bwa.feierlaiedu.com/api/v1/bbg/taskRecord/queryUserInfo url script-request-header https://raw.githubusercontent.com/chxm1023/QX/main/Task/jzyl.js
 
 [MITM]
 hostname = bwa.feierlaiedu.com
