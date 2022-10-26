@@ -1,4 +1,4 @@
-/*
+/****************************************
 赶集直招
 
 先到 赶集直招app->我的->梦想小店，把引导剧情过了，再跑脚本
@@ -6,20 +6,20 @@
 先绑定微信和进行实名，人脸认证才能提现
 定时一天一两次
 
-************************************
+*****************************************
 重写：点击赶集直招app->我的->梦想小店 获取
 
 [task_local]
 #赶集直招
-44 7,21 * * ? https://raw.githubusercontents.com/chxm1023/QX/main/Task/gjzz.js, tag=赶集直招, img-url=https://raw.githubusercontents.com/chxm1023/script/main/icon/ganji.png, enabled=true
+44 7,21 * * ? https://raw.githubusercontent.com/chxm1023/QX/main/Task/gjzz.js, tag=赶集直招, img-url=https://raw.githubusercontent.com/chxm1023/script/main/icon/ganji.png, enabled=true
 
 [rewrite_local]
-https://gjgrowthoper.58.com/user/userinfo url script-request-header https://raw.githubusercontents.com/chxm1023/QX/main/Task/gjzz.js
+https://gjgrowthoper.58.com/user/userinfo url script-request-header https://raw.githubusercontent.com/chxm1023/QX/main/Task/gjzz.js
 
 [MITM]
 hostname = gjgrowthoper.58.com
 
-************************************
+****************************************/
 cron: 44 7,21 * * *
 const $ = new Env("赶集直招")
 */
