@@ -1,4 +1,4 @@
-/*******************************
+/****************************************
  * 监控汇率变化
  * @author: Peng-YM
  * @Alter: chxm1023
@@ -11,7 +11,7 @@
 [task_local]
 10 0 * * ? https://raw.githubusercontent.com/chxm1023/QX/main/Task/hljk.js, tag=汇率监控, img-url=https://raw.githubusercontent.com/chxm1023/script/main/icon/hljk.png, enabled=true
 
-*******************************/
+****************************************/
 
 const base = "CNY"; // 基准货币，可以改成其他币种
 const digits = 3; // 保留几位有效数字
