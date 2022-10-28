@@ -8,7 +8,7 @@
 
 [rewrite_local]
 
-https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/bdcloud.js
+https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/bdcloud.js
 
 [mitm]
 
