@@ -11,15 +11,14 @@
 * @ScriptFunction    FileBall挂载阿里云盘、Alist，播放云盘中的音乐和视频文件
 * @Attention         如需引用请注明出处，谢谢合作！
 * @Version           v0.0.10
-* @Suit              脚本已使用Env做了兼容处理，理论适配多个工具，请自行测试
-* @ScriptURL         https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/ali.js
+* @Suit              脚本已使用Env做了兼容处理，理论适配多个工具，请自行
 * ==/UserScript==
 
 *****************************************
 
 [rewrite_local]
 
-^https?:\/\/.*\.example\.com url script-analyze-echo-response https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/ali.js
+^https?:\/\/.*\.example\.com url script-analyze-echo-response https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/aligz.js
 
 [mitm]
 
