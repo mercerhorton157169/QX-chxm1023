@@ -1,0 +1,20 @@
+/****************************************
+项目功能：RNI 解锁高级会员
+下载地址：http://mtw.so/6rFM99
+使用声明：仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
+*****************************************
+
+[rewrite_local]
+
+# 一言 解锁会员
+^https:\/\/app\.yiyan\.art\/yiyan\/ url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/yiyan.js
+
+[mitm] 
+
+hostname=app.yiyan.art
+
+****************************************/
+
+
+var body = $response.body.replace(/viptype":"1"/g, 'viptype":"4"')
+$done({ body });
