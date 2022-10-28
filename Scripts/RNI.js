@@ -8,9 +8,6 @@
 
 [rewrite_local]
 
-# RNI解锁高级会员
-[rewrite_local]
-
 ^https:\/\/pro-status-service-prod\.azurewebsites\.net\/api\/item url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/RNI.js
 
 [mitm] 
