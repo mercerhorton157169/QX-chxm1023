@@ -1,17 +1,21 @@
 /****************************************
 
+项目功能：RNI 解锁高级会员
+下载地址：http://mtw.so/6rFM99
+使用声明：仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
 
+*****************************************
 
 [rewrite_local]
 
 # RNI解锁高级会员
 [rewrite_local]
-^https:\/\/pro-status-service-prod\.azurewebsites\.net\/api\/item url script-response-body 自己命名.js
+
+^https:\/\/pro-status-service-prod\.azurewebsites\.net\/api\/item url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/RNI.js
 
 [mitm] 
 
 hostname=pro-status-service-prod.azurewebsites.net
-
 
 ****************************************/
 
