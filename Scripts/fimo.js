@@ -20,6 +20,85 @@ hostname = server.yoyiapp.com
 var chxm1023 = JSON.parse($response.body);
 
     chxm1023 = 
-{"receipt":{"receipt_type":"Production","app_item_id":1454219307,"receipt_creation_date":"2022-10-28 17:08:34 Etc/GMT","bundle_id":"com.fimo.camera","original_purchase_date":"2022-10-06 05:52:50 Etc/GMT","in_app":[],"adam_id":1454219307,"receipt_creation_date_pst":"2022-10-28 10:08:34 America/Los_Angeles","request_date":"2022-10-28 17:18:03 Etc/GMT","request_date_pst":"2022-10-28 10:18:03 America/Los_Angeles","version_external_identifier":850553808,"request_date_ms":"1666977483104","original_purchase_date_pst":"2022-10-05 22:52:50 America/Los_Angeles","application_version":"1237","original_purchase_date_ms":"1665035570000","receipt_creation_date_ms":"1666976914000","original_application_version":"1237","download_id":501809210277972740},"status":0,"environment":"Production"}
+{
+  "films" : [
+    {
+      "goodId" : "fimoAesthetic400",
+      "pay" : "sync",
+      "goodPrice" : 6,
+      "time" : "2022-10-06 13:55:01",
+      "tagName" : "",
+      "photo" : 0,
+      "goodName" : "Aesthetic 400"
+    },
+    {
+      "goodId" : "fimoBusiness400",
+      "pay" : "sync",
+      "goodPrice" : 0,
+      "time" : "2022-10-06 13:55:01",
+      "tagName" : "",
+      "photo" : 0,
+      "goodName" : "Business 400"
+    },
+    {
+      "goodId" : "fimoEK80",
+      "pay" : "sync",
+      "goodPrice" : 0,
+      "time" : "2022-10-06 13:55:01",
+      "tagName" : "",
+      "photo" : 0,
+      "goodName" : "EK 80"
+    },
+    {
+      "goodId" : "fimoIFPAN100",
+      "pay" : "sync",
+      "goodPrice" : 6,
+      "time" : "2022-10-06 13:55:01",
+      "tagName" : "",
+      "photo" : 2,
+      "goodName" : "PAN 100"
+    },
+    {
+      "goodId" : "fimoLMcolor100",
+      "pay" : "sync",
+      "goodPrice" : 0,
+      "time" : "2022-10-06 13:55:01",
+      "tagName" : "",
+      "photo" : 0,
+      "goodName" : "LM Color 100"
+    }
+  ],
+  "subscribe" : {
+    "valid" : true,
+    "forever" : 1,
+    "endTime" : 0
+  },
+  "filmsCommonOrder" : [
+    "fimoBlackTea50",
+    "fimoDiary400",
+    "fimoLMcolor100_w",
+    "fimopro_3",
+    "fimoUltramax400",
+    "fimoTokyo500_w"
+  ],
+  "user" : {
+    "id" : 3750618,
+    "uuid" : "ojhXLwKcLZIr8XIwuJQPNknlnifo",
+    "phone" : "",
+    "sex" : null,
+    "time" : "2022-10-06 13:54:40",
+    "wx" : null,
+    "location" : "",
+    "icon" : "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIcuw70M9dfxWWPnbwmFuHCvzohJeZfHc3oEmpy6BkfU8Ddwe5Gw033V6cTWl01WntRMUcqOaricxA/132",
+    "orgin" : "wx",
+    "platform" : 1,
+    "sync" : 1,
+    "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mzc1MDYxOCwiZGV2aWNlIjoiOEY1MjlFN0UtREQ1RC00NUY5LTgwNDUtRDZGOTkzNUVFMjYwIiwidGltZSI6MTY2Njk3NzMzNTk1NiwiaWF0IjoxNjY2OTc3MzM1fQ.nx6qehYTzOR1MSkrIB7cQ2fkLgCnnKKxcSMgjX8MXc0",
+    "email" : "",
+    "name" : "chxm1023",
+    "status" : 1
+  }
+}
+
 
 $done({body : JSON.stringify(chxm1023)});
