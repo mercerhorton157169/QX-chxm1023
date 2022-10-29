@@ -18,6 +18,6 @@ hostname = scibug.com
 
 let chxm1023 = JSON.parse($response.body);
 
-chxm1023= {"valid":true,"hasUserConsumedAppleFreeTrial":false,"isCurrentlyInFreeTrial":false,"newlyAssociated":false,"membership":{"isCurrentlyInFreeTrial":false,"valid":true,"hasUserConsumedAppleFreeTrial":false,"newlyAssociated":false,"PROversion":2099-10-23 09:09:09}}
+chxm1023= {"valid":true,"hasUserConsumedAppleFreeTrial":false,"isCurrentlyInFreeTrial":false,"newlyAssociated":false,"membership":{"isCurrentlyInFreeTrial":false,"valid":true,"hasUserConsumedAppleFreeTrial":false,"newlyAssociated":false}}
 
 $done({body: JSON.stringify(chxm1023)});
