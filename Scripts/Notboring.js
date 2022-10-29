@@ -17,7 +17,6 @@ hostname=api-weather.andy.works
 ****************************************/
 
 
-var cuttlefish ={"warning":"仅供学习，禁止转载或售卖","tgchannel":"https://t.me/chxm1023","feedback":"chxm1023"}
 var chxm1023 = JSON.parse($response.body);
 chxm1023.body=
 {
