@@ -40,4 +40,5 @@ chxm1023.body=
       "lastRefreshDateMs" : 1854888714285
     }
   ]
+}
 $done({body: JSON.stringify(chxm1023)});
