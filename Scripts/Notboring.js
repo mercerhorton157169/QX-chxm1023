@@ -101,8 +101,6 @@ if (ua.indexOf('com.andyworks.calculator') != -1) {
 }
 
 
-
-
 if (ua.indexOf('com.andyworks.weather') != -1) {
     Body = 
 {
