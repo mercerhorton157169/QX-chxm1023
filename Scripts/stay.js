@@ -7,7 +7,7 @@
 
 *****************************************
 
-^https:\/\/api\.shenyin\.name\/stay\/active url script-request-header https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/stay.js
+^https:\/\/api\.shenyin\.name\/stay\/active url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/stay.js
 
 hostname = api.shenyin.name
 
