@@ -8,11 +8,11 @@
 
 [rewrite_local]
 
-^https:\/\/(awvp|gw)\.aoscdn\.com\/base\/vip\/client\/authorizations$ url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/arajf.js
+^https?:\/\/.*\.aoscdn\.com\/base\/vip\/client\/authorizations url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/arajf.js
 
 [mitm]
 
-hostname = awvp.aoscdn.com, gw.aoscdn.com
+hostname = *.aoscdn.com
 
 ****************************************/
 
@@ -20,8 +20,8 @@ var body = $response.body;
 var obj = JSON.parse(body); 
 
 obj.data.is_activated = 1;
-obj.data.expire_time = "9999-09-09 09:09:09";
-obj.data.durations = 100000;
+obj.data.expire_time = "2099-10-23 09:09:09";
+obj.data.durations = 99999;
 obj.data.expired_at = 253395492741;
 
 body = JSON.stringify(obj);
