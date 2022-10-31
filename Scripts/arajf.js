@@ -8,11 +8,11 @@
 
 [rewrite_local]
 
-^https:\/\/.*\.aoscdn\.com\/base\/vip\/client\/authorizations$ url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/arajf.js
+^https:\/\/(awvp|gw)\.aoscdn\.com\/base\/vip\/client\/authorizations$ url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/arajf.js
 
 [mitm]
 
-hostname = *.aoscdn.com
+hostname = awvp.aoscdn.com, gw.aoscdn.com
 
 ****************************************/
 
