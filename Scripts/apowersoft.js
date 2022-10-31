@@ -8,7 +8,7 @@
 
 [rewrite_local]
 
-https?:\/\/.*\.aoscdn\.com\/base\/vip\/client\/authorizations$ url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/apowersoft.js
+^https?:\/\/.*\.aoscdn\.com\/base\/vip\/client\/authorizations url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/apowersoft.js
 
 [mitm] 
 
