@@ -28,13 +28,13 @@ var chxm1023 = {
     "period_type" : "active",
     "remain_days" : 99999,
     "product_id" : 369,
-    "has_present" : 0,
+    "has_present" : 1,
     "allowed_device_count" : 1,
-    "has_buy_extend" : 0,
-    "will_expire" : 0,
+    "has_buy_extend" : 1,
+    "will_expire" : "2099-10-23 09:09:09",
     "license_type" : "premium",
     "begin_activated_time" : 1645798296,
-    "durations" : 0,
+    "durations" : 999999999,
     "vip_special" : 1
   }
 };
