@@ -27,15 +27,15 @@ var chxm1023 = {
     "device_id" : 600150864,
     "period_type" : "active",
     "remain_days" : 999999999,
-    "product_id" : 369,
+    "product_id" : 963,
     "has_present" : 0,
     "allowed_device_count" : 1,
     "has_buy_extend" : 0,
-    "will_expire" : "2099-10-23 09:09:09",
+    "will_expire" : 0,
     "license_type" : "premium",
     "begin_activated_time" : 1645798296,
     "durations" : 999999999,
     "vip_special" : 1
   }
-};
+}
 $done({body: JSON.stringify(chxm1023)});
