@@ -20,9 +20,12 @@ var body = $response.body;
 var obj = JSON.parse(body); 
 
 obj.data.is_activated = 1;
+obj.data.is_lifetime = 1;
 obj.data.expire_time = "2099-10-23 09:09:09";
-obj.data.durations = 99999;
+obj.data.durations = 999999999;
 obj.data.expired_at = 253395492741;
+obj.data.vip_special = 1;
+obj.data.license_type = "premium";
 
 body = JSON.stringify(obj);
 $done({body});
