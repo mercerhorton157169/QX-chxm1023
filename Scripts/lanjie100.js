@@ -8,17 +8,38 @@
 
 [rewrite_local]
 
-^https:\/\/tagit\.lanjie100\.com\/cypt\/block100\/get_vip_info url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/lanjie100.js
+^https:\/\/ai\.lanjie100\.com\/block100\/get_config url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/lanjie100.js
 
-[mitm] 
+[mitm]
 
-hostname = tagit.lanjie100.com
+hostname = ai.lanjie100.com
 
 ****************************************/
 
 var chxm1023 = JSON.parse($response.body);
 
-    chxm1023 = {lvCQG8cCxqficLk+LttK+PXwKUyRqPphmf5FT/uEn63YZVhg2kcUnZXvHibgHEb30cLsFnOWb0vS6jMq3jw/6KV/Tl7cX7JLqZqVEZj7nDON7/0/DJeERb7DdFW0rfXOVTWYGaxJ1t+s5MwJMnC5t8xACaarF6D5D/GcC/ZJ0BhgqkRniD0nRfRAg6H2baX7XmGBFtri0zRUJaQ6YBpdw7bHBhZU+w9+Am7N7WX0HeTE/4ejLL+UKyIEHeX/Invp}
+    chxm1023 = {
+  "msg" : "成功",
+  "data" : {
+    "uin" : "691594330",
+    "config" : {
+      "show_all" : true,
+      "jump_app_status" : true,
+      "remove_ad_status" : true
+    },
+    "jump_param" : "",
+    "protocol_version" : "1",
+    "video_url" : "http://aop.huoying666.com/block100/setting-tag-v2.mp4",
+    "ad_data" : {
+      "img_url" : "",
+      "jump_url" : ""
+    },
+    "latest_app_version" : "1.0",
+    "key" : "e03f2393db108f61d92d8ccaf80e682a5c46402f217d0f8d868341822e2f6122",
+    "force_upgrade" : "0"
+  },
+  "code" : 0
+}
 
 
 $done({body : JSON.stringify(chxm1023)});
