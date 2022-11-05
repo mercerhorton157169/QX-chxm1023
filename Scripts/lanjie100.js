@@ -10,9 +10,13 @@
 
 ^https:\/\/ai\.lanjie100\.com\/block100\/get_config url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/lanjie100.js
 
+^https:\/\/tagit\.lanjie100\.com\/cypt\/block100\/get_vip_info\/.* url request-header ujH/4y/kQkVm0uqu7P/K8LoKdM4xZBw92LCK4Qa4r5TczNi0o8WYQmeyCfmcCiCjMWByRuvcrsUE8efLXaLF9lsFXaQh+zoL3nzGcnuQK71mnI6sHT3AQR+Z1uiP5vlQk5yy3KSAXj8wEGjSodb+5OYvuinCL4bUcKSflgnvVE/MuL4tTAxQhVHR5oLCAwZ78/7yYFl9Mm5s0DpAi0Q+5AszUWDor/7j2plqu7j3LBwa9+GYVgsPd4lN5uz2b2vhxUDri40exo29sg5/7Hxmx1CiTnfOyzUU02GIO0SHP0GNvTaBiivAgV2ChcYSFMihaiuJZaueAHD2camfiVHMjXC08ftC+5qX9SkbazJ9JoCRRz9oElncWyYXX2+l+HCIi274S6V2qUoWH0mt0HaCV/BAIGC+v7j2f71hFYL4iMHO4iFzboTmdgp1HbiWa33W8qtkvNuBS5bQmP5azqEqDPnqit1b2F0ImKhGBlowXD03Wl55QFhNNwKDLDHcU13QhZeZ6VGRIqZqZqbE73S57g==
+
+
+
 [mitm]
 
-hostname = ai.lanjie100.com
+hostname = ai.lanjie100.com, tagit.lanjie100.com
 
 ****************************************/
 
