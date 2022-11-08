@@ -9,26 +9,26 @@
 
 [rewrite_local]
 
-^https:\/\/ytapi\.radio\.cn\/ytsrv\/srv\/appUser\/getUserInfoH5 url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/yunting.js
+^http:\/\/getway\.radio\.cn url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/yunting.js
+
+^https:\/\/ytapi\.radio\.cn url script-response-body https://raw.githubusercontent.com/chxm1023/QX/main/Scripts/yunting.js
 
 
 [mitm] 
 
-hostname = ytapi.radio.cn
+hostname = *.radio.cn
 
 ****************************************/
 
 
-var body = $response.body;
-var chxm1023 = JSON.parse(body);
-
-chxm1023.object.userLevelInfo.levelName = "太傅";
-chxm1023.object.userLevelInfo.levelIcon = "https://ytmedia.radio.cn/CCYT%2F201909%2F25%2F19%2F4Wl5Ko9EvANH7iaCQCpKsQXw6AyT2019092519799.png";
-chxm1023.object.userLevelInfo.levelRange = "100000";
-chxm1023.object.userLevelInfo.minlevelRange =  "50001";
-chxm1023.object.baseInfo.isVip = 1;
-chxm1023.object.baseInfo.vipTime = "2099-10-23";
+const getway = "/getway.radio.cn";
+const ytapi = "/ytapi.radio.cn";
 
 
-body = JSON.stringify(chxm1023);
+if ($request.url.indexOf(getway) != -1){body = $response.body.replace(/\"isVip":\d+/g, '\"isVip":0').replace(/\"needPay":\d+/g, '\"needPay":0');}
+
+
+if ($request.url.indexOf(ytapi) != -1){ body = $response.body.replace(/\"vipTime":"(.*?)"/g,'\"vipTime":"2099-10-23"');}
+
+
 $done({body});
